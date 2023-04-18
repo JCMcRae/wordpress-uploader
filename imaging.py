@@ -7,18 +7,19 @@ import glob
 
 from plnr import ERRORS, WP_UPLOAD_ERROR, wp
 
-EXTERNAL_IMAGES_DIRECTORY = glob.glob("../../Clean Your Shoes/Pictures/CYSTech/*")
-IMAGES_DIRECTORY = "images/"
+EXTERNAL_IMAGES_DIRECTORY = glob.glob("your/external/folder/here")
+IMAGES_DIRECTORY = "your/internal/images/folder"
 
 
 # TODO: Reformat Raw Data Class.
+# This class is a lightweight class to keep the filename, caption, and `scheduler` data in one neat form.
 class RawData:
     def __init__(self, filename, caption, schedule):
         self.filename = filename
         self.caption = caption
         self.schedule = schedule
 
-
+# This is a lightweight class meant to handle response data.
 class WordpressResponse:
     def __init__(self, response):
         self.json = response.json()
