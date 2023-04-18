@@ -5,7 +5,7 @@ import shutil
 from PIL import Image
 import glob
 
-from plnr import ERRORS, WP_UPLOAD_ERROR, wp
+from your_python_package import ERRORS, WP_UPLOAD_ERROR, wp
 
 EXTERNAL_IMAGES_DIRECTORY = glob.glob("your/external/folder/here")
 IMAGES_DIRECTORY = "your/internal/images/folder"
